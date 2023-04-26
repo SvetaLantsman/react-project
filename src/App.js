@@ -13,7 +13,7 @@ function App() {
       amount: 1254.72
     },
     {
-      date: new Date(2021, 4, 1),
+      date: new Date(2021, 3, 1),
       description: "Jeans",
       amount: 49.99
     }
