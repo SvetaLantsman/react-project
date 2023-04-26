@@ -1,5 +1,5 @@
 import "./CostDate.css";
-const CostDate=(props)=> {
+const CostDate =(props) => {
     const month = props.date.toLocaleString('en-EN', {month:'long'});
     const year = props.date.getFullYear();
     const day = props.date.toLocaleString('en-EN', {day:'2-digit'});
