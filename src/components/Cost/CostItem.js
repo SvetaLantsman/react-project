@@ -1,10 +1,15 @@
 import "./CostItem.css";
-  function CostItem() {
+import CostDate from "./CostDate";
+  function CostItem(props) {
+    
 
     return (
-        <div><div>Date</div>
-        <div>Title</div>
-        <div>Sum</div>
+        <div className="cost-item">
+        <CostDate/>    
+        <div className="cost-item__description">
+        <h2>{props.description}</h2>
+        <div className="cost-item__price">${props.amount}</div>
+        </div>
         </div>
     );  
   }
