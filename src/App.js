@@ -1,6 +1,6 @@
 import Costs from "./components/Cost/Costs";
 
-function App() {
+const App = () => {
   const costs = [
     {
       date: new Date(2021, 2, 12),
@@ -18,6 +18,13 @@ function App() {
       amount: 49.99
     }
   ]
+
+  // return React.createElement(
+  //   "div",
+  //   {},
+  //   React.createElement("h1", {}, "Начнём изучение React!"),
+  //   React.createElement(Costs, { costs: costs })
+  // );
   return (
     <div>
       <h1>Start</h1>
