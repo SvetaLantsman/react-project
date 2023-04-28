@@ -35,6 +35,8 @@ const App = () => {
 
   const addCostHandler = (cost) => {
     setCosts((prevCosts) => {
+      console.log("New Cost:", cost);
+      console.log("New Costs Array:", newCosts);
       return [cost, ...prevCosts];
     });
   };
