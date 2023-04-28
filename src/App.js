@@ -25,14 +25,15 @@ const INITIAL_COSTS = [
 const App = () => {
  
   const [costs, setCosts]= useState(INITIAL_COSTS);
-  
-  const addCostHandler =(cost)=>{
-    setCosts(prevCosts=>{
-      return [cost, ...prevCosts];
-      
-    });
-    
-  }
+
+ const addCostHandler = (cost) => {
+   setCosts((prevCosts) => {
+     const newCosts = [cost, ...prevCosts];
+     console.log("New Cost:", cost);
+     console.log("Prev Costs Array:", newCosts);
+     return newCosts;
+   });
+ };
 
   // return React.createElement(
   //   "div",
@@ -43,7 +44,7 @@ const App = () => {
   return (
     <div>
       <NewCost onAddCost={addCostHandler} />
-       <Costs costs={costs}/>
+      <Costs costs={costs} />
     </div>
   );
 }
