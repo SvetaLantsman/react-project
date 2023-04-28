@@ -4,7 +4,7 @@ import Card from '../UI/Card';
 import CostsFilter from './CostsFilter';
 import React, {useState} from 'react';
 const Costs = (props)=>{
-  const [selectedYear, setSelectedYear] = useState('2021');
+  const [selectedYear, setSelectedYear] = useState('2019');
    const yearChangeHandler =(year)=>{
       setSelectedYear(year);
    }
